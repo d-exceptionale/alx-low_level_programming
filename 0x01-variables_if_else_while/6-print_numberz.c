@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - prints single numbers of base 10 starting from 0
+ * main - prints single numbers of base 10 starting from 0,
  * using putchar and followed by a newline
  * Return: always 0 (works!)
  */
