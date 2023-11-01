@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints the sizes of various data types based on the computer it is compiled on..
+ * main - prints the sizes of various data types based on the computer
+ * it is compiled on..
  * Return: Always 0 (success!)
  */
 
