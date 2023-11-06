@@ -11,7 +11,7 @@
 int mul(int x, int y)
 
 {
-	result = x * y;
-	return (result);
+
+	return (x * y);
 }
 
