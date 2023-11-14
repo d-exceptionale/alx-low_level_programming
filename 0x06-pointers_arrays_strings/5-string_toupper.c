@@ -10,12 +10,12 @@ char *string_toupper(char *str)
 {
 	int count = 0;
 
-	while (str)
+	while (str[count])
 	{
-		if (str[count] >= 'a' && str[ind667ex] <= 'z')
+		if (str[count] >= 'a' && str[count] <= 'z')
 			str[count] -= 32;
 		count++;
 	}
 
-	return (str)
+	return (str);
 }
