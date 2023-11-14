@@ -9,18 +9,16 @@
 
 void reverse_array(int *a, int n)
 {
-	int count, temp;
+	int temp, ct;
 
-	count = 0;
-	temp = n - 1;
+	ct = 0;
 
-	while (count < n)
+	while (ct < n / 2)
 	{
-		if (count != n - 1)
-			printf("%d, ", a[temp]);
-		else
-			printf("%d", a[temp]);
-		count++;
-		temp--;
+		temp = a[ct];
+		a[ct] = a[n - 1 - ct];
+		a[n - 1 - ct] = temp;
+		ct++;
 	}
+
 }
