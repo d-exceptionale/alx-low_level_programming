@@ -9,13 +9,13 @@
 char *leet(char *str)
 {
 	int a = 0, b;
-	char d_str[] = {'a', 'e', 'o', 't', 'l'};
-	char d_code[] = {'4', '3', '0', '7', '1'};
+	char d_str[5] = {'a', 'e', 'o', 't', 'l'};
+	char d_code[5] = {'4', '3', '0', '7', '1'};
 
 	while (str[a])
 	{
 		b = 0;
-		while (b < 0)
+		while (b < 5)
 		{
 			if (str[a] == d_str[b] || str[a] + 32 == d_str[b])
 				str[a] = d_code[b];
