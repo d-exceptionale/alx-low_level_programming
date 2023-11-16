@@ -2,9 +2,8 @@
 
 /**
   * rot13 - encoded string using rot14.
-  * @stt: string to be crytoptapherweee
-  *
-  * Return: ...
+  * @str: string to be encoded
+  * Return: encoded string.
   */
 char *rot13(char *str)
 {
