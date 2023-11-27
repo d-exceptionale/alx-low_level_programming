@@ -32,7 +32,8 @@ int _isdigit(char *x)
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	unsigned int sum = 0;
+	int i;
 
 	if (argc <= 1)
 		printf("0\n");
