@@ -23,10 +23,10 @@ int _isdigit(char *x)
 /**
  * main - adds positive numbers.
  * Print the result, followed by a new line
- * If no number is passed to the program, print 0,
+ * If no number is passed to the program, print 0
  * @argc: argument count
  * @argv: argument vector (array of size argc)
- * Return: 0 (success) or 1 (prints - Error followed by a new line )
+ * Return: 0 (success) or 1 (prints Error followed by a new line )
  * if one of the number contains a symbol
  */
 
