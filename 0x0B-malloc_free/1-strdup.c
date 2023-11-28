@@ -34,17 +34,17 @@ char *_strdup(char *str)
 	int i, j;
 	char *mstr;
 
-	if (*str == '\0')
+	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
 		j++;
 
 	mstr = (char *)malloc(i * sizeof(char));
 
+	_strcpy(mstr, str);
 	if (mstr == NULL)
 		return (NULL);
 
-	_strcpy(mstr, str);
 	return (mstr);
 
 
