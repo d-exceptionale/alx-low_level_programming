@@ -31,10 +31,10 @@ char *_strcpy(char *dest, char *src)
 
 char *_strdup(char *str)
 {
-	int i, j;
+	int i;
 	char *mstr;
 
-	if (str == NULL)
+	if (*str == NULL)
 		return (NULL);
 	for (i = 0; str != '\0'; i++)
 		str++;
