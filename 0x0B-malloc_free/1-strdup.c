@@ -46,6 +46,7 @@ char *_strdup(char *str)
 
 	_strcpy(mstr, str);
 
+	mstr[j] = '\0';
 	return (mstr);
 
 
