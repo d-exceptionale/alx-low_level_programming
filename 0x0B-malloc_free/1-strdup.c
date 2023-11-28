@@ -3,25 +3,6 @@
 #include "main.h"
 
 /**
- *   _strcpy - Copy a string
- *   @dest: Destination value
- *   @src: Source value
- *   Return: the pointer to dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i;
-
-	for (i = 0; src[i] != '\0'; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i++] = '\0';
-	return (dest);
-}
-
-/**
  * _strdup - returns a pointer to newly allocated space in memory, which
  * contains a copy of the string given as a parameter.
  * @str: str to be copied
@@ -31,24 +12,25 @@ char *_strcpy(char *dest, char *src)
 
 char *_strdup(char *str)
 {
-	int i, j;
+	int i = 1, j = 0;
 	char *mstr;
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-		j++;
+	while (str[i])
+		i++;
 
-	mstr = (char *)malloc(i * sizeof(char));
+	mstr = (char *)malloc((i * sizeof(char)) + 1);
 
 	if (mstr == NULL)
 		return (NULL);
-
-	_strcpy(mstr, str);
+	while (j < i)
+	{
+		mstr[j] = str[j];
+		j++;
+	}
 
 	mstr[j] = '\0';
 	return (mstr);
-
-
 
 }
