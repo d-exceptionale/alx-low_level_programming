@@ -31,13 +31,13 @@ char *_strcpy(char *dest, char *src)
 
 char *_strdup(char *str)
 {
-	int i;
+	int i, j;
 	char *mstr;
 
-	if (*str == NULL)
+	if (*str == '\0')
 		return (NULL);
-	for (i = 0; str != '\0'; i++)
-		str++;
+	for (i = 0; str[i] != '\0'; i++)
+		j++;
 
 	mstr = (char *)malloc(i * sizeof(char));
 
