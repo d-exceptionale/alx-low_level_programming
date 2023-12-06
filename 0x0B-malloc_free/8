@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * strtow - splits a string into words.
+ * Each element of this array should contain a single word, null-terminated.
+ * @str: string to be splitted
+ * Return: pointer to an array of strings (words),or returns NULL if
+ * str == NULL or str == ""
+ * function fails
+ */
+
+char **strtow(char *str)
+{
+	int i = 0;
+	char **s;
+
+	if (str == NULL || str == "")
+		return (NULL);
+
+	while (str)
+	{
+		i++;
+	}
+	
+}
