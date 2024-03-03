@@ -13,8 +13,10 @@ void print_binary(unsigned long int n)
 	int shift;
 
 	if (n == 0)
+	{
 		printf("0");
-
+		return;
+	}
 	for (temp = n, shift = 0; (temp >>= 1) > 0; shift++)
 		;
 
